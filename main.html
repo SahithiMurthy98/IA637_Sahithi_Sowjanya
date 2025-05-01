@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Main menu</h1>
+      <div id="menumsg">
+		Hello, {{ me.fname }}
+	  </div>
+	<br><br>
+
+	{% if me.role == 'admin' %}
+        <!-- Admin-specific menu -->
+        <a href="/profile">Profile</a><br>
+        <a href="/workouts/manage">Workouts</a><br>
+        <a href="/plans/manage">Plans</a><br>
+        <a href="/users/manage">Users</a><br>
+    {% elif me.role == 'customer' %}
+        <!-- Customer-specific menu -->
+        <a href="/profile">Profile</a><br>
+        <a href="/workouts">Workouts</a><br>
+        <a href="/plans">Plans</a><br>
+    {% endif %}
+
+	<a href="/logout">Logout</a><br>
+	
+	
+{% endblock %}

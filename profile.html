@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>Your Profile</h1>
+
+    {% if msg %}
+        <div style="color: green;">{{ msg }}</div>
+    {% endif %}
+
+    <form action="/profile" method="POST">
+        <strong>Name:</strong> {{ me.fname }}<br><br>
+        <strong>Email:</strong> {{ me.email }}<br><br>
+        <strong>Role:</strong> {{ me.role }}<br><br>
+
+        Date of Birth:<br>
+        <input type="date" name="DOB" value="{{ me.DOB }}"><br><br>
+
+        Height (cm):<br>
+        <input type="text" name="height" value="{{ me.height }}"><br><br>
+
+        Weight (kg):<br>
+        <input type="text" name="weight" value="{{ me.weight }}"><br><br>
+
+        Weight (kg):<br>
+        <input type="text" name="weight" value="{{ me.weight }}"><br><br>
+
+        <input type="submit" value="Save">
+    </form>
+
+    <br>
+    <a href="/main">Back to Main Menu</a>
+{% endblock %}
