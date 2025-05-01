@@ -1,0 +1,15 @@
+db:
+  user: *******
+  pw: *******
+  host: *******
+  db: *******
+  port: 3306
+tables:
+  user: *******
+  workout: *******
+  activitylog: *******
+  plan: *******
+  planworkout: *******
+
+  
+
