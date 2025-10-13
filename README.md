@@ -6,11 +6,11 @@ A Flask-based fitness tracking system that allows administrators to create worko
 
 ▶ Admin:
 
-Add/update/delete workouts and plans
+-Add/update/delete workouts and plans
 
-Link multiple workouts to each plan (many-to-many)
+-Link multiple workouts to each plan (many-to-many)
 
-View user statistics (total users, by gender)
+-View user statistics (total users, by gender)
 
 ▶ Customer:
 
